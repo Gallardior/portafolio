@@ -1,8 +1,15 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gallardior`,
+	titleTemplate: %s | 'Gallardior',
+    description: `Hola, soy Jesus Gallardo, un Frontend Developer apasionado por el mundo de la web y el aprendizaje continuo`,
+	url: 'https://gallardior.com',
+	image: 'src/images/og.jpg'
+    author: `@gallardior`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,6 +36,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: "gatsby-source-graphcms",
+      options: {
+        endpoint: process.env.GRAPHCMS_ENDPOINT,
+        token: process.env.GRAPHCMS_TOKEN,
+      },
+    },
+    "gatsby-plugin-postcss",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
