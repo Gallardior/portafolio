@@ -5,11 +5,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Gallardior`,
-	titleTemplate: %s | 'Gallardior',
+	titleTemplate: '%s | Gallardior',
     description: `Hola, soy Jesus Gallardo, un Frontend Developer apasionado por el mundo de la web y el aprendizaje continuo`,
 	url: 'https://gallardior.com',
-	image: 'src/images/og.jpg'
-    author: `@gallardior`,
+	image: '/images/og.jpg',
+    author: '@gallardior',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
