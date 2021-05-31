@@ -1,17 +1,15 @@
 import * as React from "react"
 
+import { Header, Footer } from "../components"
+
 export const Layout = ({ children }) => {
   return (
     <> 
-      <header className="bg-blue-500 text-white p-5">
-        <h2>Este es mi header</h2>
-      </header>
+      <Header />
 
       {children}
-
-      <footer className="bg-blue-500 text-white p-5">
-        <h2>Este es mi footer</h2>
-      </footer>
+		
+      <Footer />  
     </>
   )
 }
