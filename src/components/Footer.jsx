@@ -1,9 +1,18 @@
 import * as React from "react"
+import { TwitterIcon, FacebookIcon, GithubIcon, LinkedinIcon } from "./icons/icons"
 
 export const Footer = () => {
   return(
-    <footer className="bg-gradient-to-r from-green-400 to-blue-500 font-bold text-lg text-white p-5">
-      <h2>Este es mi footer</h2>
+    <footer className="text-md p-4 text-center bg-gray-500 bg-opacity-5">
+	  <div className="flex justify-center mb-4 space-x-8">
+	    <TwitterIcon url="https://twitter.com/gallardior"/>
+		<FacebookIcon url="#"/>
+		<GithubIcon url="#"/>
+		<LinkedinIcon url="#"/>
+	  </div>
+      <div className="lg:container mx-auto">
+		<p> © 2021 <strong>Jesus Gallardo</strong> - Todos los derechos reservados.</p>
+	  </div>
     </footer>
   )
 }
