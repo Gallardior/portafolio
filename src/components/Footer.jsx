@@ -11,7 +11,7 @@ export const Footer = () => {
 		<LinkedinIcon url="#"/>
 	  </div>
       <div className="lg:container mx-auto">
-		<p> © 2021 <strong>Jesus Gallardo</strong> - Todos los derechos reservados.</p>
+		<p> © 2021 <strong>Jesus Gallardo</strong>. Todos los derechos reservados.</p>
 	  </div>
     </footer>
   )

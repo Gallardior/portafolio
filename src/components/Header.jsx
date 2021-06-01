@@ -35,8 +35,8 @@ const Nav = () => {
     <nav>
 	  {/* MENU MOVIL */}
 	  <BurguerMenu children={
-		<div className="p-8">
-		  <ul className="text-center space-y-8 font-bold font-black text-md">
+		<div>
+		  <ul className="text-center space-y-8 font-bold text-lg text-white">
 	        <li>
 			  <Link to="/page-2/" >Portafolio</Link>
 			</li>

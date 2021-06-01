@@ -14,6 +14,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+	{
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,6 +48,7 @@ module.exports = {
       options: {
         endpoint: process.env.GRAPHCMS_ENDPOINT,
         token: process.env.GRAPHCMS_TOKEN,
+		buildMarkdownNodes: true,
       },
     },
     "gatsby-plugin-postcss",

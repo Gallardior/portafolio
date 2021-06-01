@@ -50,17 +50,7 @@ const BurguerMenu = ({ children }) => {
         </svg>
 	  </button>
 	  
-	  <Transition
-        show={isOpen}
-        enter="transition-opacity duration-75"
-        enterFrom="opacity-0 invisible"
-        enterTo="opacity-100 visible"
-        leave="transition-opacity duration-150"
-        leaveFrom="opacity-100 visible"
-        leaveTo="opacity-0 invisible"
-		className="fixed top-0 left-0 min-h-screen w-full"
-		onClick={() => setIsOpen(false)}
-      ></Transition>
+	  
 	  
 	  <Transition
         show={isOpen}
@@ -86,7 +76,7 @@ const BurguerMenu = ({ children }) => {
           leave="transition-opacity duration-75"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
-		  className="text-center min-h-screen bg-gray-500 absolute right-0 top-0 w-80 bg-opacity-50 backdrop-filter backdrop-blur-sm"
+		  className="z-10 text-center min-h-screen bg-black absolute right-0 top-0 w-full bg-opacity-50 backdrop-filter backdrop-blur-sm flex items-center justify-center"
         >
 		{children}
       </Transition>

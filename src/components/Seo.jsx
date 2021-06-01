@@ -42,8 +42,8 @@ export const Seo = (props) => {
 		 
   const SEO = {
 	  title: props.title || title,
-	  description,
-	  image: `${url}${image}`,
+	  description: props.description || description,
+	  image: props.image ? props.image : `${url}${image}`,
 	  url: `${url}${pathname}` 
     }
 		 
