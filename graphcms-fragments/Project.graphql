@@ -1,0 +1,56 @@
+fragment Project on Project {
+  stage
+  remoteId: id
+  createdAt
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedAt
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedAt
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  title
+  slug
+  miniatura {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  repositorio
+  preview
+  screens {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  content
+  seo {
+    ... on Seo {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+}

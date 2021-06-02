@@ -38,10 +38,10 @@ const Nav = () => {
 		<div>
 		  <ul className="text-center space-y-8 font-bold text-lg text-white">
 	        <li>
-			  <Link to="/page-2/" >Portafolio</Link>
+			  <Link to="/portfolio" >Portafolio</Link>
 			</li>
 			<li>
-			  <Link to="/page-2/" >Blog</Link>
+			  <Link to="/blog" >Blog</Link>
 			</li>
 			<li>
 			  <Link to="/page-2/" >Contacto</Link>
@@ -57,10 +57,10 @@ const Nav = () => {
 	  {/* MENU DEKSTOP */}
 	  <ul className="space-x-8 hidden lg:flex items-center font-bold font-black text-md">
 	    <li>
-		  <Link to="/page-2/" >Portafolio</Link>
+		  <Link to="/portfolio" >Portafolio</Link>
 		</li>
 	    <li>
-		  <Link to="/page-2/" >Blog</Link>
+		  <Link to="/blog" >Blog</Link>
 		</li>
 		<li>
 		  <Link to="/page-2/" >Contacto</Link>
