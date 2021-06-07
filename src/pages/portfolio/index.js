@@ -1,25 +1,19 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
-import { Layout, Seo } from "../../components"
+import { Layout, Seo, ProjectCard } from "../../components"
 
 const PortfolioPage = (props) => {
 	const allProjects = props.data.allGraphCmsProject.nodes
-	console.log(allProjects)
 	return(
 		<Layout>
 			<Seo title="Portfolio"/> 
-			<h1 className="my-4 text-center">Ultimos Proyectos</h1>
+			<h2 className="my-4 text-center font-bold text-[40px] text-[#2D3748]">Ultimos Proyectos</h2>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 			{
-				allProjects.map(project => {
-					return(
-					<>
-						<h3>{project.title}</h3>
-						<Link to={`/portfolio/${project.slug}`}>Ir al posts </Link>
-					</>
-					)
-				})
+				allProjects.map(project => <ProjectCard project={project} key={project.title}/>)
 			}
+			</div>
 		</Layout>
 	)
 }
@@ -30,6 +24,11 @@ export const allProjects = graphql`
 		nodes {
 		  title
 		  slug
+		  preview
+		  repositorio
+		  miniatura {
+			url
+		  }
 		}
 	  }
 	}
