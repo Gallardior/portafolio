@@ -44,9 +44,9 @@ export default function PostTemplate (props) {
   return(
     <Layout>
 	  <Seo title={post.seo.title} description={post.seo.description} image={searchImage}/> 
-	  <GatsbyImage image={ getImage(cover) } alt="" className="w-full lg:h-[300px]" />
+	  <GatsbyImage image={ getImage(cover) } alt="" className="w-full h-[300px]" />
 	  
-	  <article className="max-w-[980px] mx-auto text-[#333]">
+	  <article className="max-w-[980px] mx-auto text-[#2D3748]">
 	    <h2 className="font-bold text-[40px] mt-4">{post.title}</h2>
 		<small className="text-[16px]">{post.date}</small>
 		<hr className="my-8 bg-gray-300" />
