@@ -1,6 +1,5 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
 import { Layout, Seo, ProjectCard } from "../../components"
 
 const PortfolioPage = (props) => {

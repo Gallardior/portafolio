@@ -76,7 +76,7 @@ const Nav = () => {
 
 export const Header = () => {
   return(
-    <header className="p-4 w-full relative">
+    <header className="p-4 w-full relative border-b border-gray-200 shadow-md mb-8">
       <div className="lg:container mx-auto flex items-center justify-between">
 		<Logo />
 		<Nav />

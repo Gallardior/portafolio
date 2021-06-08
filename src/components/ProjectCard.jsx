@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+
 const SaberMas = () => {
 	return(
 	<span>
@@ -11,7 +12,7 @@ const SaberMas = () => {
 	)
 }
 
-const VerCodigo = () => {
+export const VerCodigo = () => {
 	return(
 	<span>
 		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
@@ -21,7 +22,7 @@ const VerCodigo = () => {
 	)
 }
 
-const VerProyecto = () => {
+export const VerProyecto = () => {
 	return(
 	<span>
 		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
@@ -60,13 +61,13 @@ export const ProjectCard = ({project}) => {
 	const height = active ? 'h-[100%]' : 'h-[0]'
 	
 	return(
-		<div className="rounded-md border border-gray-200 overflow-hidden shadow-md relative">
+		<div onMouseLeave={ handleBlur }  className="rounded-md border border-gray-200 overflow-hidden shadow-md relative">
 			<div className="bg-[#222222] relative p-[5px]">
 				<Options />
 				<h3 className="font-bold text-[14px] text-[#EEE] text-center">{project.title}</h3>
 			</div>
 			<img onMouseEnter={ handleHover } src={project.miniatura.url} alt={project.title} className="w-full h-[300px] max-h-[300px] object-cover"/>
-			<div onMouseLeave={ handleBlur } className={`${height} transition-[all] duration-500 ease-in-out overflow-hidden w-full absolute top-[31px] left-0`}>
+			<div className={`${height} transition-[all] duration-500 ease-in-out overflow-hidden w-full absolute top-[31px] left-0`}>
 				<div className="h-[100%] flex flex-col justify-center items-center space-y-4 bg-black bg-opacity-80 text-white font-bold">
 					{
 						project.repositorio && 
