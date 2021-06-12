@@ -7,7 +7,7 @@ export const Layout = ({ children }) => {
     <> 
       <Header />
 
-      <div className="lg:container mx-auto px-4">
+      <div className="lg:container mx-auto px-4 pt-28">
 	    {children}
 	  </div>
 		

@@ -1,12 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import { TwitterIcon, FacebookIcon, GithubIcon, LinkedinIcon, BurguerMenu } from "./icons/icons"
 
 const Logo = () => {
   return(
     <Link to="/">
-	  <img alt="Logo" src="https://midu.dev/logo.png" width="160"/>
+	  <StaticImage alt="Logo" src="https://midu.dev/logo.png" width={160}/>
 	</Link>
   )
 }
@@ -76,7 +77,7 @@ const Nav = () => {
 
 export const Header = () => {
   return(
-    <header className="p-4 w-full relative border-b border-gray-200 shadow-md mb-8">
+    <header className="p-4 w-full relative border-b border-gray-200 shadow-md mb-8 fixed z-[5] bg-white">
       <div className="lg:container mx-auto flex items-center justify-between">
 		<Logo />
 		<Nav />
