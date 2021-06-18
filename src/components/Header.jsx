@@ -45,10 +45,10 @@ const Nav = () => {
 			  <Link to="/blog" >Blog</Link>
 			</li>
 			<li>
-			  <Link to="/page-2/" >Contacto</Link>
+			  <Link to="/contact" >Contacto</Link>
 			</li>
 			<li>
-			  <Link to="/page-2/" >Sobre Mi</Link>
+			  <Link to="/about" >Sobre Mi</Link>
 			</li>
 			<Social />
 	      </ul>
@@ -64,10 +64,10 @@ const Nav = () => {
 		  <Link to="/blog" >Blog</Link>
 		</li>
 		<li>
-		  <Link to="/page-2/" >Contacto</Link>
+		  <Link to="/contact" >Contacto</Link>
 		</li>
 		<li>
-		  <Link to="/page-2/" >Sobre Mi</Link>
+		  <Link to="/about" >Sobre Mi</Link>
 		</li>
 		<Social />
 	  </ul>

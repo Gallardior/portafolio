@@ -67,7 +67,7 @@ export const ProjectCard = ({project}) => {
 				<h3 className="font-bold text-[14px] text-[#EEE] text-center">{project.title}</h3>
 			</div>
 			<img onMouseEnter={ handleHover } src={project.miniatura.url} alt={project.title} className="w-full h-[300px] max-h-[300px] object-cover"/>
-			<div className={`${height} transition-[all] duration-500 ease-in-out overflow-hidden w-full absolute top-[31px] left-0`}>
+			<div className={`${height} transition-[all] duration-500 ease-in-out overflow-hidden w-full absolute top-[30px] left-0`}>
 				<div className="h-[100%] flex flex-col justify-center items-center space-y-4 bg-black bg-opacity-80 text-white font-bold">
 					{
 						project.repositorio && 

@@ -6,8 +6,10 @@ const BlogPage = (props) => {
 	const allPosts = props.data.allGraphCmsPost.nodes
 	return(
 		<Layout>
-			<Seo title="Blog"/> 
-			<h2 className="my-4 text-center font-bold text-[40px] text-[#2D3748]">Ultimos Articulos</h2>
+			<Seo title="Blog"/>
+			<div className="prose text-center mb-8 min-w-full">
+				<h2>Ultimos Articulos</h2>
+			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 			{
 				allPosts.map(post => <PostCard post={post} key={post.title} />)

@@ -11,7 +11,7 @@ export const PostCard = ({post}) => {
 				<div className="px-4">
 					<h3 className="mb-4 font-bold text-[20px]">{post.title}</h3>
 					<p className="text-[14px] mb-[22px] text-[#2D3748]">{post.description}</p>
-					<small className="text-[14px] text-[#2D3748]">{post.date}</small>
+					<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{post.date}</span>
 				</div>
 			</Link>
 		</div>

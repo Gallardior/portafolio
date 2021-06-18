@@ -101,7 +101,7 @@ const Slider = ({images}) => {
 
 const VerProyectoBtn = ({url}) => {
 	return(
-		<a href={url} target="_blank" rel="noreferrer" className="font-bold p-4 flex items-center space-x-3 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-white rounded-md">
+		<a href={url} target="_blank" rel="noreferrer" className="transition duration-500 ease-in-out font-bold p-4 flex items-center space-x-3 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-white rounded-md">
 			<span>Ver Proyecto</span> 
 			<VerProyecto />
 		</a>
@@ -110,7 +110,7 @@ const VerProyectoBtn = ({url}) => {
 
 const VerCodigoBtn = ({url}) => {
 	return(
-		<a href={url} target="_blank" rel="noreferrer" className="font-bold p-4 flex items-center space-x-3 bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 text-white rounded-md">
+		<a href={url} target="_blank" rel="noreferrer" className="transition duration-500 ease-in-out font-bold p-4 flex items-center space-x-3 bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 text-white rounded-md">
 			<span>Ver Codigo</span> 
 			<VerCodigo />
 		</a>

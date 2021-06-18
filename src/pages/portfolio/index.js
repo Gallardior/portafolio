@@ -7,7 +7,9 @@ const PortfolioPage = (props) => {
 	return(
 		<Layout>
 			<Seo title="Portfolio"/> 
-			<h2 className="my-4 text-center font-bold text-[40px] text-[#2D3748]">Ultimos Proyectos</h2>
+			<div className="prose text-center mb-8 min-w-full">
+				<h2>Ultimos Proyectos</h2>
+			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 			{
 				allProjects.map(project => <ProjectCard project={project} key={project.title}/>)
