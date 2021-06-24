@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { Layout, Seo, ProjectCard, PostCard, BtnContact } from "../components"
+import { Layout, Seo, ProjectCard, PostCard, BtnContact, ContactZone } from "../components"
 
 const Hero = () => {
 	return(
@@ -16,7 +16,7 @@ const Hero = () => {
 				</svg>
 			</div>
 			<div className="hidden md:block md:min-h-full relative">
-				<StaticImage src="../images/hero-image.jpg" className="h-full min-h-[80vh] absolute right-0 bottom-0" alt="hero-image" />
+				<StaticImage src="../images/me.jpg" className="h-full min-h-[80vh] absolute right-0 bottom-0 w-full" alt="hero-image" />
 			</div>
 		</div>
 	)
@@ -62,6 +62,7 @@ const IndexPage = props => {
 	  <Hero />
       <Posts posts={posts} />
       <Projects projects={projects} />
+	  <ContactZone />
     </Layout>
   )
 }

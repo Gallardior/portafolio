@@ -7,6 +7,7 @@ import { ProjectCard } from "./ProjectCard"
 import { BtnContact } from "./BtnContact"
 import { ContactForm } from "./ContactForm"
 import { AlertError } from "./AlertError"
+import { ContactZone } from "./ContactZone"
 
 export { Layout,
  Seo,
@@ -16,4 +17,6 @@ export { Layout,
  ProjectCard,
  BtnContact,
  ContactForm,
- AlertError } 
+ AlertError,
+ ContactZone
+ } 
