@@ -6,7 +6,10 @@ import { TwitterIcon, FacebookIcon, GithubIcon, LinkedinIcon, BurguerMenu } from
 
 const Logo = () => {
   return(
-    <h1 class="font-bold text-3xl">GallardoDev</h1>
+    <Link to="/" >
+	<h2 className="font-bold text-3xl">GallardoDev</h2>
+    </Link>
+    
   )
 }
 // <StaticImage alt="Logo" src="https://midu.dev/logo.png" width={160}/>
